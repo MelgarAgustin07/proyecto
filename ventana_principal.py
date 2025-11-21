@@ -101,9 +101,9 @@ ventana_principal.RECORDS_GLOBALES = {
 
 # Título
 etiqueta = tk.Label(contenedor_widgets, text='🧠 Selecciona la Dificultad', 
-                    font=FUENTE_TITULO, 
-                    bg='black' if contenedor_widgets != ventana_principal else COLOR_FONDO, # Fondo oscuro si está sobre Canvas
-                    fg=COLOR_TEXTO_CLARO)
+font=FUENTE_TITULO, 
+bg='black' if contenedor_widgets != ventana_principal else COLOR_FONDO, # Fondo oscuro si está sobre Canvas
+fg=COLOR_TEXTO_CLARO)
 
 # Colocación de Widgets
 centro_x = ANCHO_VENTANA / 2 

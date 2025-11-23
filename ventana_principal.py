@@ -4,7 +4,7 @@ import Memoria_Facil
 import Memoria_Medio
 import Memoria_Dificil
 import os
-
+import musica
 COLOR_FONDO = "#2c3e50"
 COLOR_BOTON_NORMAL = "#3498db"
 COLOR_BOTON_RECORDS = "#e67e22"
@@ -53,6 +53,17 @@ ventana_principal.title('Juego de Memoria')
 ventana_principal.geometry('350x500')
 ventana_principal.resizable(False, False)
 ventana_principal.configure(bg=COLOR_FONDO)
+
+
+
+
+
+
+try:
+    musica.reproducir_intro()
+except Exception as e:
+    print(f"Error al iniciar la música: {e}")
+
 
 try:
     ruta_fondo_principal = os.path.join(ruta_imagenes, "imagen_fondo.png")

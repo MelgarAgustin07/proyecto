@@ -6,3 +6,5 @@ Antes de ejecutar el programa, asegurate de instalar las dependencias:
 pip install pygame
 pip install pillow
 
+otra opcion:
+pip install -r requirements.txt
